@@ -1,0 +1,46 @@
+<h1 class="text-center">Find Your Property</h1>
+<br>
+<form action="index.php" method="post">
+    <div class="row">
+        <div class="col-sm">
+            <div class="form-group text-center">
+                <label for="typeSelect">Type</label>
+                <select name="type" id="typeSelect" class="form-control" required>
+                    <option value="Choose" selected disabled>Choose</option>
+                    <option value="1">Maisonette</option>
+                    <option value="2">Villa</option>
+                    <option value="3">House</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="form-group text-center">
+                <label for="locationSelect">Location</label>
+                <select name="location" id="locationSelect" class="form-control" required>
+                    <option value="Choose" selected disabled>Choose</option>
+                    <option value="1">Valletta</option>
+                    <option value="2">Attard</option>
+                    <option value="3">Tarxien</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="form-group text-center">
+                <label for="minMoney">Min €</label>
+                <input type="number" name="minMoney" id="minMoney" class="form-control" required placeholder="Enter Minimum Price">
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="form-group text-center">
+                <label for="maxMoney">Max €</label>
+                <input type="number" name="maxMoney" id="maxMoney" class="form-control"  required placeholder="Enter Maximum Price">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col text-center">
+            <button type="submit" class="btn btn-primary" name="searchForm">Submit</button>
+        </div>
+    </div>
+</form>
